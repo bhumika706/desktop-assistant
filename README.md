@@ -1,30 +1,43 @@
-# desktop-assistant
+# Desktop-Assistant-using-Python
 
 ## How to run:
 
-1.create a new virtual enviroment
+1. Create a new virtual environment
 
-    bash
+```bash
 conda create -n assistant1 python=3.8
 
+```
 
+2. Checkout the created virtual environment
 
-2.  checkout the created virtual enviroment
-
-    bash
+```bash
 conda env list
 
+```
 
+3. Activate the virtual environment
 
-3. Activate the virtual enviroment
-bash
-conda env list
+```bash
+conda activate assistant1 
 
-
-conda activate assistant1
+```
 
 4. Install all the packages present in the requirements file
 
 
-    bash
+```bash
 pip install -r requirements.txt
+
+```
+
+
+## Required Github Commands
+
+```bash
+git add .
+
+git commit -m "message"
+
+git push origin main
+```
