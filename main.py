@@ -60,9 +60,14 @@ if __name__ == "__main__":
         speak("According to wikipedia")
         print(results)
         speak(results)
+
+
+
     elif "youtube" in query: 
         speak("Opening YouTube")
         webbrowser.open("youtube.com")
+
+        
 
     elif "google" in query:
         speak("Opening google")
@@ -70,6 +75,19 @@ if __name__ == "__main__":
 
 
 
-     elif "github" in query:
+    elif "github" in query:
         speak("Opening github")
         webbrowser.open("github.com")
+
+
+
+    elif "time" in query:
+        strTime = datetime.datetime.now().strftime("%H:%M:%S")
+        spreak(f"Sir the time is {strTime}")
+
+
+    
+    
+    elif "goodbye" in query:
+        speak("ok sir. I am always here for you.bye bye")
+        exit()
