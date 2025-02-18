@@ -70,6 +70,6 @@ if __name__ == "__main__":
 
 
 
-        elif "github" in query:
+     elif "github" in query:
         speak("Opening github")
         webbrowser.open("github.com")
