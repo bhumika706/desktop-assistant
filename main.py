@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
     elif "time" in query:
         strTime = datetime.datetime.now().strftime("%H:%M:%S")
-        spreak(f"Sir the time is {strTime}")
+        speak(f"Sir the time is {strTime}")
 
 
     
