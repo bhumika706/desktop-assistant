@@ -91,3 +91,6 @@ if __name__ == "__main__":
     elif "goodbye" in query:
         speak("ok sir. I am always here for you.bye bye")
         exit()
+    
+    else:
+        speak(query)    
