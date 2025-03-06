@@ -4,9 +4,9 @@ import os
 from gtts import gTTS
 
 
-GOOGLE_API_KEY = "AIzaSyAze0IffcHWgv9fmiIsAXI-gwn9Z92ukn0"
+GOOGLE_API_KEY = "AIzaSyCwNuw0YipaaTl8bTnReIn2s6L8_Qal5Go"
 os.environ['GOOGLE_API_KEY'] = GOOGLE_API_KEY
-
+os.environ['GEMINI_API_KEY'] = GOOGLE_API_KEY
 
 def voice_input():
     # Create a recognizer instance
@@ -40,7 +40,7 @@ def text_to_speech(text):
 def llm_model_object(user_text):
     genai.configure(api_key=GOOGLE_API_KEY)
     
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-2.0-flash')
     
     response=model.generate_content(user_text)
     
